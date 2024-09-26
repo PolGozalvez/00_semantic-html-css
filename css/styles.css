@@ -27,13 +27,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 3rem 1.25rem;
+    padding: 3rem 0;
     flex-direction: row;
     flex: 1;
     margin: 2rem;
 }
 
-.create-note {
+.create_note {
     background-color: white;
     padding: 1.5rem; 
     border-radius: 0.5rem; 
@@ -42,19 +42,18 @@ main {
     width: 50%;
 }
 
-.create-note h2 {
+.create_note h2 {
     margin-bottom: 1.25rem;
     font-size: 1.5rem;
     color: #333;
 }
 
-.create-note label {
+.create_note label {
     display: block;
     margin-bottom: 0.5rem;
 }
 
-.create-note input,
-.create-note textarea {
+.create_note input {
     width: 100%;
     padding: 0.625rem;
     margin-bottom: 1rem; 
@@ -62,8 +61,16 @@ main {
     border-radius: 0.25rem;
 }
 
-.create-note button {
-    background-color: #ff5c33;
+.create_note textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.create_note button {
+    background-color: #ff5722;
     color: white;
     padding: 0.65rem; 
     border: none;
@@ -73,8 +80,8 @@ main {
     cursor: pointer;
 }
 
-.create-note button:hover {
-    background-color: #e6552e;
+.create_note button:hover {
+    background-color: #e64a19;
 }
 
 .resources {
@@ -103,6 +110,10 @@ main {
 .resources ul li a {
     color: #3a79d6;
     text-decoration: none;
+}
+
+.resources ul li a:visited {
+    color: darkblue;
 }
 
 .resources ul li a:hover {
